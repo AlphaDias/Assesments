@@ -1,0 +1,69 @@
+Table: Users 
+ 
++--------------+---------+ 
+| Column Name | Type | 
++--------------+---------+ 
+| Id | int | 
+| Name | varchar | 
+| CommitCounts | int | 
+| LanguageID | int | 
++--------------+---------+ 
+Id is the primary key for this table. 
+Each row contains the ID, name, CommitCounts - contains the total commit of the user, and LanguageID of one em
+ployee. 
+ 
+ 
+Table: Language 
+ 
++-------------+---------+ 
+| Column Name | Type | 
++-------------+---------+ 
+| Id | int | 
+| LanguageName| varchar | 
++-------------+---------+ 
+ 
+Id is the primary key for this table. 
+Each row contains the ID and the LanguageName is the programming language the user have used, 
+it could be like Python, HTML etc. 
+ 
+Startup Founder is interested in seeing who has done maximum number of commits in each of the programming lan
+guage. 
+A Star commiter in a language is a user who has maximum number of commit. 
+ 
+Write an SQL query to find the employees who are start commiters in each of the programming language.
+
+
+
+
+
+Solution :
+TABLES 
+
+USERS
+userid	Name	commitcounts	languageID
+1	      Joe  	85000	        1
+2     	Henry	80000	        2
+3	      Sam	  60000	        2
+4	      Max 	90000       	1
+5	      Janet	69000	        1
+6     	Randy	85000	        1
+7     	Will	70000	        1
+
+LANGUAGES
+languageID	languageName
+1         	Python
+2         	Javascript
+
+
+SELECT  L.languageName AS Department,U.Name AS Employee,U.commitcounts AS Salary FROM  Languages AS L, Users AS  U 
+WHERE L.languageID=U.languageID ORDER BY(commitcounts) DESC ;
+
+Department	Employee	Salary
+Python	    Max	      90000
+Python	    Joe	      85000
+Python	    Randy	    85000
+Javascript	Henry   	80000
+Python	    Will	    70000
+Python	    Janet   	69000
+Javascript	Sam	      60000
+
