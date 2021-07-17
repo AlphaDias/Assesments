@@ -41,7 +41,7 @@ TABLES
 
 
 USERS
-userid	Name	commitcounts	languageID
+userid	 Name   commitcounts	 languageID
 1	      Joe  	 85000	        1
 2      	Henry	 80000	        2
 3	      Sam	   60000	        2
@@ -59,7 +59,7 @@ languageID	languageName
 SELECT  L.languageName AS Department,U.Name AS Employee,U.commitcounts AS Salary FROM  Languages AS L, Users AS  U 
 WHERE L.languageID=U.languageID ORDER BY(commitcounts) DESC ;
 
-Department	Employee	Salary
+Department	Employee 	Salary
 Python	    Max	      90000
 Python	    Joe	      85000
 Python	    Randy	    85000
