@@ -41,13 +41,13 @@ TABLES
 
 USERS
 userid	Name	commitcounts	languageID
-1	      Joe  	85000	        1
-2     	Henry	80000	        2
-3	      Sam	  60000	        2
-4	      Max 	90000       	1
-5	      Janet	69000	        1
-6     	Randy	85000	        1
-7     	Will	70000	        1
+1	      Joe  	 85000	        1
+2      	Henry	 80000	        2
+3	      Sam	   60000	        2
+4	      Max 	  90000       	 1
+5	      Janet	 69000	        1
+6     	 Randy	 85000	        1
+7     	 Will	  70000	        1
 
 LANGUAGES
 languageID	languageName
@@ -62,8 +62,8 @@ Department	Employee	Salary
 Python	    Max	      90000
 Python	    Joe	      85000
 Python	    Randy	    85000
-Javascript	Henry   	80000
-Python	    Will	    70000
-Python	    Janet   	69000
+Javascript	Henry   	 80000
+Python	    Will	     70000
+Python	    Janet    	69000
 Javascript	Sam	      60000
 
