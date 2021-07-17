@@ -39,6 +39,7 @@ Write an SQL query to find the employees who are start commiters in each of the 
 Solution :
 TABLES 
 
+
 USERS
 userid	Name	commitcounts	languageID
 1	      Joe  	 85000	        1
